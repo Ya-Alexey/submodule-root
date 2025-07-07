@@ -1,0 +1,22 @@
+@font-face {
+    font-family: "ApercuMonoPro";
+    font-display: swap;
+    src: local("ApercuMonoPro-Medium"), url("../fonts/ApercuMonoPro-Medium.woff") format("woff"), url("../fonts/ApercuMonoPro-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "LabGrotesque";
+    font-display: swap;
+    src: local("LabGrotesque-Medium"), url("../fonts/LabGrotesque-Medium.woff") format("woff"), url("../fonts/LabGrotesque-Medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "LabGrotesque";
+    font-display: swap;
+    src: local("LabGrotesque-Regular"), url("../fonts/LabGrotesque-Regular.woff") format("woff"), url("../fonts/LabGrotesque-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}

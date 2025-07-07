@@ -1,0 +1,56 @@
+.form {
+    font-family: LabGrotesque, sans-serif;
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 500;
+
+    &__message,
+    &__mail {
+        display: block;
+        background-color: #1B1B1B;
+        color: $color-white;
+        border-radius: 24px;
+        width: 100%;
+        padding: 26px;
+        border: none;
+        &:focus {
+            background-color: #2B2B2B;
+            outline: 2px solid #3a3a3a;
+        }
+        &::placeholder {
+            font-size: 16px;
+            line-height: 100%;
+            font-weight: 500;
+        }
+    }
+    &__message {
+        margin-bottom: 19px;
+    }
+    &__mail {
+        padding-right: 170px;
+    }
+    &__wrap {
+        position: relative;
+    }
+    &__btn {
+        position: absolute;
+        right: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        border-color: $color-white;
+        transition: all 0.3s;
+        padding: 19px 24px;
+        @media (max-width: 768px) {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        @media (max-width: 575px) {
+            padding-left: 8px;
+            padding-right: 8px;
+        }
+        &:hover, 
+        &:focus {
+            border-color: $color-black;
+        }
+    }
+}

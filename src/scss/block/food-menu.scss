@@ -1,0 +1,43 @@
+.food-menu {
+    &__container {
+        padding: 40px 16px;
+        max-width: 1080px;
+        overflow: hidden;
+        @media(max-width: 768px) {
+            padding-top: 24px;
+            padding-bottom: 20px;
+        }
+    }
+    &__title {
+        display: flex;
+        align-items: flex-end;
+        margin-bottom: 52px;
+        @media(max-width: 768px) {
+            padding-left: 8px;
+            margin-bottom: 22px;
+        }
+        @media(max-width: 575px) {
+            align-items: baseline;
+        }
+    }
+    &__title-decor{
+        display: block;
+        margin-left: 20px;
+        width: 177px;
+        height: 64px;
+        background-image: url(../img/svg/icons.svg#menu-breakfast);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @media(max-width: 1023px) {
+            width: 157px;
+            height: 57px;
+        }
+        @media(max-width: 575px) {
+            width: 100px;
+            height: 38px;
+            margin-left: 8px;
+        }
+    }
+}

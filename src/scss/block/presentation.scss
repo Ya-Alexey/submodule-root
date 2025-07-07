@@ -1,0 +1,187 @@
+.presentation {
+    overflow-x: hidden;
+
+    &__btn-prev, 
+    &__btn-next {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        padding: 0;
+        top: 50%;
+        transform: translateY(-64%);
+        cursor: pointer;
+        @media (max-width: 768px) {
+            top: 25%;
+        }
+        &:hover, 
+        &:active {
+            animation: btnTransform 0.4s backwards;
+        }
+    }
+    &__btn-prev {
+        left: -117px;
+        width: 212px;
+        height: 208px;
+        z-index: 1;
+        @media (max-width: 1199px) {
+            left: -134px;
+        }
+        @media (max-width: 1023px) {
+            left: -146px;
+        }
+        @media (max-width: 768px) {
+            width: 22%;
+            height: 22%;
+            left: -12%;
+        }
+        @media (max-width: 575px) {
+            top: 22%;
+        }
+    }
+    &__btn-next {
+        right: -58px;
+        width: 170px;
+        height: 235px;
+        @media (max-width: 1199px) {
+            right: -86px;
+        }
+        @media (max-width: 1023px) {
+            right: -114px;
+        }
+        @media (max-width: 768px) {
+            width: 22%;
+            height: 22%;
+            right: -11%;
+        }
+    }
+
+    &__block {
+        position: relative;
+        padding-top: 102px;
+        padding-bottom: 106px;
+        padding-left: 144px;
+        @media (max-width: 1199px) {
+            padding: 80px 0 80px 120px;
+        }
+        @media (max-width: 1023px) {
+            padding: 40px 0 40px 70px;
+        }
+        @media (max-width: 768px) {
+            padding: 25px 47px 16px 24px;
+        }
+        @media (max-width: 768px) {
+            &.slick-slide {
+                display: flex;
+            }
+            flex-direction: column-reverse;
+        }
+        @media (max-width: 370px) {
+            padding-right: 24px;
+        }
+    }
+
+    &__text-content {
+        max-width: 560px;
+        @media (max-width: 1199px) {
+            max-width: 450px;
+        }
+        @media (max-width: 1023px) {
+            max-width: 51%;
+        }
+        @media (max-width: 768px) {
+            max-width: 74%;
+        }
+        @media (max-width: 575px) {
+            max-width: 100%;
+        }
+    }
+    &__title {
+        padding-bottom: 24px;
+        position: relative;
+        &::before {
+            @extend %border-dashed;
+            // position: absolute;
+            // content: '';
+            // bottom: 0;
+            // left: 0;
+            // right: 0;
+            // width: 100%;
+            // height: 1px;
+            // background-image: url(../img/border.png);
+            // background-repeat: repeat-x;
+            // background-size: 12px 1px;
+            // background-position: left center;
+        }
+        @media (max-width: 1023px) {
+            max-width: 400px;
+        }
+        @media (max-width: 575px) {
+            max-width: 300px;
+        }
+    }
+    &__subtitle {
+        margin: 0;
+        padding-top: 24px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 125%;
+        text-transform: uppercase;
+        color: $color-black;
+        @media (max-width: 1023px) {
+            font-size: 20px;
+        }
+        @media (max-width: 575px) {
+            font-size: 16px;
+            line-height: 125%;
+        }
+    }
+    &__wrap-img {
+        position: absolute;
+        width: 615px;
+        height: 470px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 9%;
+        z-index: -1;
+        @media (max-width: 1199px) {
+            width: 550px;
+            height: 420px;
+            right: 5%;
+        }
+        @media (max-width: 1023px) {
+            width: 47%;
+            height: 100%;
+        }
+        @media (max-width: 768px) {
+            position: static;
+            transform: initial;
+            width: 96%;
+            height: 52vw;
+            margin-bottom: 16px;
+        }
+        @media (max-width: 575px) {
+            width: 100%;
+            height: 58vw;
+        }
+    }
+    &__img {
+        max-width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        object-fit: contain;
+    }
+}
+
+@keyframes btnTransform {
+    0%{
+        transform: scale(0.97) translateY(-64%);
+    }
+
+    50%{
+        transform: scale(1.1) translateY(-64%);;
+    }
+
+    100% {
+        transform: scale(1) translateY(-64%);;
+    }
+}

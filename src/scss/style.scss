@@ -1,0 +1,44 @@
+@import "../../node_modules/normalize.css/normalize";
+@import "./component/fonts.scss";
+@import "./component/variables.scss";
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    position: relative;
+    font-family: ApercuMonoPro, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 120%;
+    color: $color-black;
+    background-color: #fafafa;
+    overflow-x: hidden;
+}
+
+
+@import "./block/slick/slick.scss";
+
+@import "./component/container.scss";
+@import "./component/btn.scss";
+@import "./component/title.scss";
+
+@import "./block/header.scss";
+@import "./block/nav.scss";
+@import "./block/presentation.scss";
+@import "./block/info.scss";
+@import "./block/food-menu.scss";
+@import "./block/tabs.scss";
+@import "./block/great.scss";
+@import "./block/restaurant.scss";
+@import "./block/restcard.scss";
+@import "./block/delivery.scss";
+@import "./block/mobile-app.scss";
+@import "./block/footer.scss";
+@import "./block/form.scss";
+@import "./block/modal-box.scss";

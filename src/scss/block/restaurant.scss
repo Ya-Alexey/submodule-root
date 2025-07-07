@@ -1,0 +1,80 @@
+.restaurant {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    @media (max-width: 768px) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    &__container {
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 16px;
+        max-width: 1080px;
+        margin: 0 auto 24px;
+        @media (max-width: 768px) {
+            align-items: baseline;
+            // max-width: 375px;
+            // margin-left: 0;
+        }
+    }
+    &__title {
+        margin-right: 16px;
+    }
+    &__toggle {
+        @media (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    &__change-btn {
+        padding: 18px 16px 14px;
+        font-size: 32px;
+        line-height: 100%;
+        @media (max-width: 768px) {
+            padding: 8px 16px;
+            font-size: 24px;
+            line-height: 125%;
+            margin-bottom: 12px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        @media (max-width: 575px) {
+            padding: 8px 16px;
+            font-size: 24px;
+            line-height: 125%;
+            
+        }
+        &.is-active {
+            color: $color-white;
+            background-color: $color-black;
+            pointer-events: none;
+        }
+    }
+    &__btn-prev,
+    &__btn-next {
+        right: 144px;
+        top: -87px;
+        @media (max-width: 1199px) {
+            right: 68px;
+        }
+        @media (max-width: 1023px) {
+            right: 20px;
+        }
+        @media (max-width: 768px) {
+            top: -136px;
+        }
+    }
+    &__btn-prev {
+        right: 258px;
+        @media (max-width: 1199px) {
+            right: 190px;
+        }
+        @media (max-width: 1023px) {
+            right: 142px;
+        }
+    }
+}

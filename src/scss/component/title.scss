@@ -1,0 +1,55 @@
+.title {
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $color-black;
+    margin: 0;
+
+    &_size-xl {
+        font-size: 80px;
+        line-height: 100%;
+        @media (max-width: 1199px) {
+            font-size: 70px;
+        }
+        @media (max-width: 1023px) {
+            font-size: 60px;
+        }
+        @media (max-width: 575px) {
+            font-size: 48px;
+            line-height: 110%;
+        }
+        @media (max-width: 370px) {
+            font-size: 40px;
+            line-height: 110%;
+        }
+    }
+    &_size-l {
+        font-size: 48px;
+        line-height: 110%;
+        @media (max-width: 1023px) {
+            font-size: 40px;
+        }
+        @media (max-width: 768px) {
+            font-size: 32px;
+            line-height: 120%;
+        }
+        @media (max-width: 370px) {
+            font-size: 28px;
+        }
+    }
+    &_size-m {
+        font-size: 32px;
+        line-height: 100%;
+        @media (max-width: 768px) {
+            font-size: 24px;
+            line-height: 125%;
+        }
+    }
+    &_size-s {
+        font-size: 24px;
+        line-height: 125%;
+        @media (max-width: 768px) {
+            font-size: 21px;
+            line-height: 100%;
+        }
+    }
+}
